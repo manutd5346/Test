@@ -5,9 +5,9 @@ const express = require('express');
 				const PORT = process.env.PORT || 3000;
 
 				
-				app.get('/', function(req, response)){
-					response.render('index.html')
-				}
+				app.get('/', function(req, response) {
+					response.render('index.html');
+				  });
 
 				app.use('/api', createProxyMiddleware({
 					target: 'https://script.google.com',
