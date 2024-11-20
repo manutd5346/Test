@@ -4,6 +4,11 @@ const express = require('express');
 				const app = express();
 				const PORT = process.env.PORT || 3000;
 
+				
+				app.get('/', function(req, response)){
+					response.render('index.html')
+				}
+
 				app.use('/api', createProxyMiddleware({
 					target: 'https://script.google.com',
 					changeOrigin: true,
@@ -25,6 +30,8 @@ const express = require('express');
 						res.status(500).send('Proxy error: ' + err.message);
 					}
 				}));
+
+				
 
 
 				app.listen(PORT, () => {
