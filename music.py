@@ -5,7 +5,7 @@ class Music:
 
     def play(self):
         pygame.init()
-        music_file = "apt.mp3"   # mp3 or mid file
+        music_file = r"C:\Users\manut\fastapi\apt.mp3"   # mp3 or mid file
         freq = 16000    # sampling rate, 44100(CD), 16000(Naver TTS), 24000(google TTS)
         bitsize = -16   # signed 16 bit. support 8,-8,16,-16
         channels = 1    # 1 is mono, 2 is stereo
