@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title> 
+</head>
+
+
+<body>
+
+  <div class="banner-text text-center">
+    {% block code_block %}<h1 class="white">{{content}}</h1>{% endblock %}
+    <p>This dep ression test is based on the Depression Screening Test based on PHQ9</p>
+  </div>
+
+  
+  <form action="/predict/coloring" method="GET">
+    <button onclick="location.href='/predict/coloring.html'">Art Therapy Start</button>
+  </form>
+
+
+  <script>
+
+    function runPythonScript() {
+    
+    var xhr = new XMLHttpRequest();
+    
+    xhr.open("GET", "music.py", true);
+    
+    xhr.send();
+    
+    }
+    
+    </script>
+
+  
+  
+  <form action="/predict/music" method="POST">
+    <button onclick="runPythonScript()">Music Therapy Start</button>
+  </form>
+
+  
+</body>
+</html>
