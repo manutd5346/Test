@@ -17,10 +17,10 @@
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
+    href="{{ url_for('static', path='/css/owl_carousel.css') }}" />
+    
   <!-- font awesome style -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', path='/css/font.css') }}">
 
 
   <!-- bootstrap core css -->
@@ -64,7 +64,7 @@
           <a class='navbar-brand' href='/'>
             <img src="imgs/logo.png" alt="">
             <span>
-              Medion
+              life@comma
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -134,14 +134,13 @@
                   <div class="detail-box">
                     <h1>
                       Welcome To Our <br>
-                      <span>
-                        Digital Medicine
-                      </span>
-
+                      <p id="title">
+                        <h3>Digital Medicine</h3>
+                      </p>
                     </h1>
-                    <p>
+                    <h1>
                       Digital medicine overview. Digital medicine uses software and algorithmically driven products to measure or intervene to improve human health. Digital medicine products can be used independently or in concert with pharmaceuticals, biologics, devices, or other products to optimize patient care and health outcomes.
-                    </p>
+                    </h1>
                     <div>
                       <form action="/Questions/" method="GET">
                         <button onclick="location.href='/question.html'">Service Start</button>
@@ -165,7 +164,7 @@
                     <h1>
                       Welcome To Our <br>
                       <span>
-                        Online Medicine
+                        Digital Medicine
                       </span>
 
                     </h1>
