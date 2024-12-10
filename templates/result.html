@@ -16,22 +16,22 @@
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    href="{{ url_for('static', path='/css/owl_carousel.css') }}" />
 
   <!-- font awesome style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="{{ url_for('static', path='/css/bootstrap.css') }}">
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', path='/css/responsive.css') }}">
 </head>
 
 <body class="sub_page">
@@ -42,18 +42,18 @@
         <div class="top_contact-container">
           <div class="tel_container">
             <a href="">
-              <img src="images/telephone-symbol-button.png" alt=""> Call : +01 1234567890
+              <img src="img/telephone-symbol-button.png" alt=""> Call : +01 1234567890
             </a>
           </div>
           <div class="social-container">
             <a href="">
-              <img src="images/fb.png" alt="" class="s-1">
+              <img src="img/fb.png" alt="" class="s-1">
             </a>
             <a href="">
-              <img src="images/twitter.png" alt="" class="s-2">
+              <img src="img/twitter.png" alt="" class="s-2">
             </a>
             <a href="">
-              <img src="images/instagram.png" alt="" class="s-3">
+              <img src="img/instagram.png" alt="" class="s-3">
             </a>
           </div>
         </div>
@@ -61,7 +61,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
+            <img src="img/logo.png" alt="">
             <span>
               life@comma
             </span>
@@ -99,7 +99,7 @@
               </form>
               <div class="login_btn-contanier ml-0 ml-lg-5">
                 <a href="">
-                  <img src="images/user.png" alt="">
+                  <img src="img/user.png" alt="">
                   <span>
                     Login
                   </span>
@@ -137,7 +137,7 @@
           </div>
           <div class="col-lg-7 col-md-5">
             <div class="img-box">
-              <img src="images/medicines.jpg" alt="">
+              <img src="img/medicines.jpg" alt="">
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@
                 </a>
               </div>
               <div class="img-box">
-                <img src="images/p-6.jpg" alt="">
+                <img src="img/p-6.jpg" alt="">
               </div>
               <div class="detail-box">
                 <div class="star_container">
@@ -201,7 +201,7 @@
                 </a>
               </div>
               <div class="img-box">
-                <img src="images/p-6.jpg" alt="">
+                <img src="img/p-6.jpg" alt="">
               </div>
               <div class="detail-box">
                 <div class="star_container">
@@ -234,7 +234,7 @@
                 </a>
               </div>
               <div class="img-box">
-                <img src="images/p-6.jpg" alt="">
+                <img src="img/p-6.jpg" alt="">
               </div>
               <div class="detail-box">
                 <div class="star_container">
@@ -267,7 +267,7 @@
                 </a>
               </div>
               <div class="img-box">
-                <img src="images/p-6.jpg" alt="">
+                <img src="img/p-6.jpg" alt="">
               </div>
               <div class="detail-box">
                 <div class="star_container">
@@ -317,7 +317,7 @@
             </h4>
             <div class="box">
               <div class="img-box">
-                <img src="images/telephone-symbol-button.png" alt="">
+                <img src="img/telephone-symbol-button.png" alt="">
               </div>
               <div class="detail-box">
                 <h6>
@@ -327,7 +327,7 @@
             </div>
             <div class="box">
               <div class="img-box">
-                <img src="images/email.png" alt="">
+                <img src="img/email.png" alt="">
               </div>
               <div class="detail-box">
                 <h6>
